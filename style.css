@@ -90,3 +90,17 @@ form button { font-weight: 600; }
 .col-md-4{
   margin-bottom: 20px;
 }
+
+.container-my-5{
+  background-image: url("https://cdn.britannica.com/84/203584-050-57D326E5/speed-internet-technology-background.jpg");
+  height:600px;
+  color: #fff;
+  
+}
+.col-md-6{
+  margin: 60px;
+  width:10px;
+}
+.mb-3{
+  width: 700px;
+}
