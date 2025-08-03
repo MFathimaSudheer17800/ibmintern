@@ -37,8 +37,12 @@ body {
 }
 
 /* Hero Section */
-section h1 { font-size: 2.5rem; }
-section p { font-size: 1.2rem; }
+section h1 {
+  font-size: 2.5rem;
+}
+section p {
+  font-size: 1.2rem;
+}
 
 /* Cards */
 .card {
@@ -49,23 +53,34 @@ section p { font-size: 1.2rem; }
   transform: translateY(-8px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
-.card-title { font-weight: 600; }
+.card-title {
+  font-weight: 600;
+}
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
 
 /* Carousel captions */
-.carousel-caption { font-size: 1.1rem; }
+.carousel-caption {
+  font-size: 1.1rem;
+}
 
+/* Contact Image */
 .contact-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
-  border-radius: 1; 
+  object-fit: cover;
+  border-radius: 1rem;
 }
+
+/* Icons */
 .feature-icon {
   width: 60px;
   height: 60px;
   object-fit: contain;
 }
-
 
 /* Footer */
 footer {
@@ -77,30 +92,87 @@ footer {
 form .form-control {
   border-radius: 8px;
 }
-form button { font-weight: 600; }
+form button {
+  font-weight: 600;
+}
 
+/* Image styling */
 .rounded-circle {
   border: 2px solid #FF9800;
   padding: 5px;
 }
-.card-img-top{
-  height:200px;
-}
 
-.col-md-4{
+/* Cards layout */
+.col-md-4 {
   margin-bottom: 20px;
 }
 
-.container-my-5{
+/* Background Section */
+.container-my-5 {
   background-image: url("https://cdn.britannica.com/84/203584-050-57D326E5/speed-internet-technology-background.jpg");
-  height:600px;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
   color: #fff;
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
 }
-.col-md-6{
-  margin: 60px;
-  width:10px;
+
+/* Column fix */
+.col-md-6 {
+  margin: 60px auto;
+  max-width: 100%;
 }
-.mb-3{
+
+/* Form width */
+.mb-3 {
+  max-width: 100%;
   width: 700px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  section h1 {
+    font-size: 2rem;
+  }
+  section p {
+    font-size: 1rem;
+  }
+  .container-my-5 {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+  .col-md-6 {
+    margin: 20px auto;
+    width: 100%;
+    padding: 1rem;
+  }
+  .mb-3 {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .card-img-top {
+    height: 160px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+  .feature-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .carousel-caption {
+    font-size: 1rem;
+  }
+  section h1 {
+    font-size: 1.6rem;
+  }
+  section p {
+    font-size: 0.95rem;
+  }
 }
